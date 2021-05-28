@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+.header{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.contact{
+    padding-top: 15px;
+}
+.contact p{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0094D2;
+    line-height: 1.333;
+    z-index: 29;     
+    display: inline;
+}
+.hotline-text, .email-text{
+    margin-left: 10px;
+}
+.phone-img{
+    width: 35px;
+    height: 35px;
+}
+.email-img{
+    margin-left: 30px;
+}
+.email-text{
+    margin-left: 10px;
+}
+.col-md-6{
+    padding-right: 0 !important;
+}
+@media (min-width : 768px) and (max-width: 1024px) {
+    .contact p{
+        font-size: 12px;
+    }
+}
+@media (min-width : 375px) and (max-width: 768px) {
+    .email{
+        display: block;
+        margin-top: 5px;
+    }
+    .email-img{
+        margin: 0;
+        width: 24px;
+        height: 19px;
+      
+    }
+    .phone-img{
+        width: 25px;
+         height: 25px;
+    }
+    
+}
+@media (max-width: 375px) {
+    .email{
+        display: block;
+        margin-top: 5px;
+    }
+    .email-img{
+        margin: 0;
+        width: 24px;
+        height: 19px;
+      
+    }
+    .phone-img{
+        width: 25px;
+        height: 25px;
+    }
+}
+.carousel{
+    height: 130vh;
+    background-image: url(image/banner.png);
+    background-size: cover;
+    
+}
+.carousel-inner{
+    position: relative;
+    top:10%;
+    left:25%;
+}
+.carousel-indicators{
+    top:38%;
+    left:20%;
+}
+.carousel-indicators li{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.carousel-item{
+    width: 80%;
+}
+.form{
+    background-color: #fff;
+    position: relative;
+    top:15%;
+    padding-top:60px;
+}
+
+.form-title{
+    font-size: 30px;
+    color:#3498db;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-align: center; 
+    z-index: 11;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.input{
+    width: 100%;
+    background-color: #EBEBEB ;
+    border: none;
+    height: 60px;
+    border-radius: 50px;
+    outline: none;
+    padding-left: 25px;
+}
+.form{
+    padding: 30px 40px;
+}
+h2{
+    text-align: center;
+    
+}
+
+
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color:#777;
+    display: block;
+    margin-bottom: 5px; 
+}
+ 
+.form-control input
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;   
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--succes-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);    
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 14px;
+    font-size: 16px;  
+    margin-top:35px;
+    width:100%;
+    border-radius: 50px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+.signin{
+    font-size: 25px;
+    text-align:center
+}
+::placeholder{
+    color: #3498db;  
+    font-family: 'Noto Sans', sans-serif;
+}
+.policy{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.policy p, .routes{
+    font-size: 15px;
+}
+.policy a ,.routes a{
+    color: #3498db;
+    text-decoration: none;
+    
+}
+.routes{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media (min-width : 768px) and (max-width: 1024px) {
+    .carousel-item{
+        width: 100%;
+    }
+    .carousel-inner{
+        position: relative;
+        top:20%;
+        left:10%;
+    }
+    .carousel-indicators{
+        top:34%;
+        left:22%;
+    }
+    
+}
+@media (min-width : 375px) and (max-width: 768px) {
+    .carousel-item{
+        width: 100%;
+    }
+    .carousel-inner{
+        top:5%;
+        left:3%;
+    }
+    .carousel-indicators{
+        top:85%;
+        left:5%;
+        height: 50px;
+    }
+    .carousel{
+        height: 50vh;
+    }
+    .form{
+        top:0%;
+    }
+}
+@media (max-width: 375px) {
+    .carousel-inner{
+        top:10%;
+        left:0%;
+    }
+    .carousel-indicators{
+        top:80%;
+        left:0%;
+    }
+    .carousel{
+        height: 40vh;
+    }
+    .form{
+        top:0%;
+        padding:30px 20px;
+    }
+    .contact p{
+        font-size: 13px;
+    }
+    .email{
+        display: none;
+    }
+}
+@media (min-width : 1024px) and (max-width: 1300px) {
+    .carousel{
+        height: 100vh;
+    }
+}
+@media (min-width: 1025px) {
+    .form{
+        top:10%;
+    }
+    .carousel-indicators{
+        top:45%;
+        left:30%;
+    }
+    .form-title{
+        margin-top: 30px;
+    }
+}
+
